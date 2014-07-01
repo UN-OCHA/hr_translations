@@ -21,5 +21,36 @@ function hr_translations_user_default_permissions() {
     'module' => 'tmgmt_local',
   );
 
+  // Exported permission: 'translate interface'.
+  $permissions['translate interface'] = array(
+    'name' => 'translate interface',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'translator' => 'translator',
+    ),
+    'module' => 'locale',
+  );
+
+  // Exported permission: 'translate user-defined strings'.
+  $permissions['translate user-defined strings'] = array(
+    'name' => 'translate user-defined strings',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'translator' => 'translator',
+    ),
+    'module' => 'i18n_string',
+  );
+
+  // Exported permission: 'translate admin strings'.
+  $permissions['translate admin strings'] = array(
+    'name' => 'translate admin strings',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'translator' => 'translator',
+    ),
+    'module' => 'i18n_string',
+  );
+
+
   return $permissions;
 }
