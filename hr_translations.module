@@ -1,0 +1,8 @@
+<?php
+/**
+ * @file
+ * Code for the Translations feature.
+ */
+
+include_once 'hr_translations.features.inc';
+

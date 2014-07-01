@@ -1,0 +1,17 @@
+name = Translations
+description = Translator role and dependencies
+core = 7.x
+package = Humanitarianresponse
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = hr_core
+dependencies[] = hr_users
+dependencies[] = strongarm
+dependencies[] = tmgmt_entity_ui
+dependencies[] = tmgmt_local
+dependencies[] = user
+dependencies[] = views
+features[features_api][] = api:2
+features[user_permission][] = provide translation services
+features[user_role][] = translator
