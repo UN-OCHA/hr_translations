@@ -21,6 +21,16 @@ function hr_translations_user_default_permissions() {
     'module' => 'tmgmt_local',
   );
 
+  // Exported permission: 'translate admin strings'.
+  $permissions['translate admin strings'] = array(
+    'name' => 'translate admin strings',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'translator' => 'translator',
+    ),
+    'module' => 'i18n_string',
+  );
+
   // Exported permission: 'translate interface'.
   $permissions['translate interface'] = array(
     'name' => 'translate interface',
@@ -29,6 +39,16 @@ function hr_translations_user_default_permissions() {
       'translator' => 'translator',
     ),
     'module' => 'locale',
+  );
+
+  // Exported permission: 'translate node entities'.
+  $permissions['translate node entities'] = array(
+    'name' => 'translate node entities',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'entity_translation',
   );
 
   // Exported permission: 'translate user-defined strings'.
@@ -40,17 +60,6 @@ function hr_translations_user_default_permissions() {
     ),
     'module' => 'i18n_string',
   );
-
-  // Exported permission: 'translate admin strings'.
-  $permissions['translate admin strings'] = array(
-    'name' => 'translate admin strings',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'translator' => 'translator',
-    ),
-    'module' => 'i18n_string',
-  );
-
 
   return $permissions;
 }

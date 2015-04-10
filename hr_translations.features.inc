@@ -1,6 +1,3 @@
 <?php
-/**
- * @file
- * hr_translations.features.inc
- */
 
+// This file is deprecated and can be removed.
