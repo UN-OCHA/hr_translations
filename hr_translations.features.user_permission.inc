@@ -51,6 +51,16 @@ function hr_translations_user_default_permissions() {
     'module' => 'entity_translation',
   );
 
+  // Exported permission: 'translate fieldable_panels_pane entities'.
+  $permissions['translate fieldable_panels_pane entities'] = array(
+    'name' => 'translate fieldable_panels_pane entities',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'entity_translation',
+  );
+
   // Exported permission: 'translate user-defined strings'.
   $permissions['translate user-defined strings'] = array(
     'name' => 'translate user-defined strings',
